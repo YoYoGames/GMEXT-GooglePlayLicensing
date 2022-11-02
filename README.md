@@ -1,2 +1,2 @@
 # GMEXT-GooglePlayLicensing
-Repository for GameMaker's GoogleLicensing Extension
+Repository for GameMaker's GooglePlayLicensing Extension
