@@ -5,7 +5,7 @@ This repository was created with the intent of presenting users with the latest 
 
 This is an Android extension only.
 
-ANDROID SOURCE: `source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/AndroidSource/Java/`
+ANDROID SOURCE: `source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/AndroidSource/`
 
 ---
 
