@@ -11,15 +11,15 @@
   },
   "defaultScriptType": 1,
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Google Play Licensing","folderPath":"folders/Google Play Licensing.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Google Play Licensing/Extensions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Google Play Licensing Demo","folderPath":"folders/Google Play Licensing Demo.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Google Play Licensing Demo/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Google Play Licensing Demo/Rooms.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Google Play Licensing","folderPath":"folders/Google Play Licensing.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Google Play Licensing/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"YoYo Extensions Assets","folderPath":"folders/YoYo Extensions Assets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Font","folderPath":"folders/YoYo Extensions Assets/Font.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/YoYo Extensions Assets/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/YoYo Extensions Assets/Sprites.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Google Play Licensing Demo","folderPath":"folders/Google Play Licensing Demo.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Google Play Licensing Extension.docx","CopyToMask":-1,"filePath":"datafiles",},

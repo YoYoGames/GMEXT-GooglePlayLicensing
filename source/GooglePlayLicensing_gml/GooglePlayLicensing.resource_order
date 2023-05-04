@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"Rooms","order":1,"path":"folders/Google Play Licensing Demo/Rooms.yy",},
     {"name":"Google Play Licensing Demo","order":1,"path":"folders/Google Play Licensing Demo.yy",},
+    {"name":"Rooms","order":1,"path":"folders/Google Play Licensing Demo/Rooms.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Font_YoYo_20","order":1,"path":"fonts/Font_YoYo_20/Font_YoYo_20.yy",},
