@@ -1,0 +1,2 @@
+
+GooglePlayLicensing_CheckLicensing()

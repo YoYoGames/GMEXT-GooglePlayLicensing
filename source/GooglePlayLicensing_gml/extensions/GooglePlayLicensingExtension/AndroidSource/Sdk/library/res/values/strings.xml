@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+  <string name="yyg_gpl_ext_license_fail">Unable to get a valid license, please ensure that you have purchased this product.</string>
+  <string name="yyg_gpl_ext_retry_needed">Unable to get a valid license, please ensure that you have a valid connection to the Store.</string>
+  <string name="yyg_gpl_ext_retry">Retry</string>
+  <string name="yyg_gpl_ext_buy">Buy</string>
+  <string name="yyg_gpl_ext_check_network">Please ensure you have an active data connection for license check</string>
+
+                 
+</resources>
