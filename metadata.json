@@ -1,0 +1,14 @@
+[
+    {
+        "projectFile": "source/GooglePlayLicensing_gml/GooglePlayLicensing.yyp",
+        "extensionFile": "source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/GooglePlayLicensingExtension.yy",
+        "packageId": "com.yoyogames.googleplaylicensingextension",
+        "packageName": "Google Play Licensing",
+        "packageVersion": "2.6.0",
+        "includeFolders": null,
+        "includeResources": null,
+        "excludeFolders": null,
+        "excludeResources": null,
+        "format": "LTS22"
+    }
+]
