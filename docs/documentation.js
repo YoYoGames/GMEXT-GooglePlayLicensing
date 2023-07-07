@@ -17,8 +17,8 @@
  * 
  * @event social
  * @member {string} type The string `"GooglePlayLicensingExtension"`
- * @member {boolean} allowed Whether the user was allowed access
- * @member {constant.LicensingErrorReason} reason When the user isn't allowed, a constant describing the reason why
+ * @member {boolean} allowed Whether the user is licensed to use the app
+ * @member {constant.LicensingErrorReason} reason When the user is not allowed, a constant describing the reason why
  * @event_end
  * 
  * @func_end
@@ -29,6 +29,14 @@
  * @title Google Play Licensing
  * @desc This is the Google Play Licensing extension.
  * 
+ * Google Play offers a licensing service that lets you enforce licensing policies for applications that you publish on Google Play. With Google Play Licensing, your application can query Google Play at run time to obtain the licensing status for the current user, then allow or disallow further use as appropriate.
+ * 
+ * When you target the Android platform, you get the possibility to upload your game to the Google Play app store. Using Google Play then gives you the option to add Google Licencing to your project, which is a protective measure to help reduce the risk of people running your game from sources other than Google Play.
+ * 
+ * ## Extension's Features
+ * 
+ * * Protect your game from unauthorised distribution.
+ * 
  * @section Guides
  * @desc This section hosts the guides to get you up and running.
  * @reference page.extension_setup
@@ -38,6 +46,11 @@
  * @section_func
  * @desc This new version of the extension will require developers to manually make the validation of the license using a provided function and also allows them to handle the response in a way they see fit.
  * @ref GooglePlayLicensing_CheckLicensing
+ * @section_end
+ * 
+ * @section_const
+ * @desc Constants
+ * @ref LicensingErrorReason
  * @section_end
  * 
  * @module_end
