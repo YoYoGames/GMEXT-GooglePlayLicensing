@@ -3,7 +3,7 @@
   "%Name":"GooglePlayLicensingExtension",
   "androidactivityinject":"",
   "androidclassname":"GooglePlayLicensingAsExt",
-  "androidcodeinjection":"<YYAndroidGradleDependencies>\r\n\r\ncompile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'\r\n</YYAndroidGradleDependencies>\r\n\r\n<YYAndroidTopLevelGradleEnd>\r\nsubprojects { subproject ->\r\n    if (subproject.name == 'library') {\r\n        subproject.plugins.withId('com.android.library') {\r\n            subproject.android {\r\n                // Specify the namespace\r\n                namespace = '${YYAndroidPackageName}'\r\n            }\r\n        }\r\n    }\r\n}\r\n</YYAndroidTopLevelGradleEnd>",
+  "androidcodeinjection":"<YYAndroidGradleDependencies>\r\n\r\ncompile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'\r\n</YYAndroidGradleDependencies>\r\n\r\n<YYAndroidTopLevelGradleEnd>\r\nsubprojects { subproject ->\r\n    if (subproject.name == '${YYEXTOPT_GooglePlayLicensingExtension_sdkFolderName}') {\r\n        subproject.plugins.withId('com.android.${YYEXTOPT_GooglePlayLicensingExtension_sdkFolderName}') {\r\n            subproject.android {\r\n                // Specify the namespace\r\n                namespace = '${YYAndroidPackageName}'\r\n            }\r\n        }\r\n    }\r\n}\r\n</YYAndroidTopLevelGradleEnd>",
   "androidinject":"",
   "androidmanifestinject":"",
   "androidPermissions":[
@@ -46,6 +46,7 @@
   "name":"GooglePlayLicensingExtension",
   "options":[
     {"$GMExtensionOption":"","%Name":"ManualCallback","defaultValue":"False","description":"","displayName":"Manual Callback","exportToINI":false,"extensionId":null,"guid":"31b3a236-3684-48a1-84a2-d8277396514c","hidden":false,"listItems":[],"name":"ManualCallback","optType":0,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"sdkFolderName","defaultValue":"library","description":"The name of the library folder inside the Sdk folder.","displayName":"SDK Folder Name","exportToINI":false,"extensionId":null,"guid":"8066f778-a967-4190-b790-2f1338ce7783","hidden":false,"listItems":[],"name":"sdkFolderName","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
   ],
   "optionsFile":"options.json",
   "packageId":"com.yoyogames.googleplaylicensingextension",
