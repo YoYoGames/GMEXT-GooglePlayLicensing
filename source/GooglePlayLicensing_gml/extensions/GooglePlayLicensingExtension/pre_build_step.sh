@@ -11,9 +11,12 @@ setupAndroid() {
     echo "Copying SDK files into your project."
     optionGetValue "sdkPath" SDK_PATH
 
+    # Delete old cache
+    itemDelete "$(dirname "$0")/AndroidSource/Sdk/"
+
     # Resolve the credentials file path and copy it to the Android ProjectFiles folder
     pathResolveExisting "$YYprojectDir" "$SDK_PATH" FOLDER_PATH
-    itemCopyTo "${FOLDER_PATH}" "$1/AndroidSource/Sdk"
+    itemCopyTo "${FOLDER_PATH}" "$1/AndroidSource/Sdk/library"
 }
 
 # ######################################################################################

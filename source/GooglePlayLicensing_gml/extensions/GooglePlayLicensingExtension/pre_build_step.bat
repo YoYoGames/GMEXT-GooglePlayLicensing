@@ -28,8 +28,11 @@ exit %errorlevel%
     echo "Copying SDK files into your project."
     call %Utils% optionGetValue "sdkPath" SDK_PATH
 
+    :: Delete old cache
+    call %Utils% itemDelete "%~dp0\AndroidSource\Sdk\"
+
     :: Resolve the credentials file path and copy it to the Android ProjectFiles folder
     call %Utils% pathResolveExisting "%YYprojectDir%" "%SDK_PATH%" FOLDER_PATH
-    call %Utils% itemCopyTo "%FOLDER_PATH%" "%~1\AndroidSource\Sdk"
+    call %Utils% itemCopyTo "%FOLDER_PATH%" "%~1\AndroidSource\Sdk\library"
 exit /b %errorlevel%
 

@@ -1,6 +1,5 @@
 
-source/GooglePlayLicensing_gml/options/android/*
-source/GooglePlayLicensing_gml/options/extensions/
+source/GooglePlayLicensing_gml/options/
 
 # Ignore everything inside the Sdk folder
 source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/AndroidSource/Sdk/**
