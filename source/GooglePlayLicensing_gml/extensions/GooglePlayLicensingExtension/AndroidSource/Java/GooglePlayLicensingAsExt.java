@@ -93,11 +93,11 @@ public class GooglePlayLicensingAsExt implements LicenseCheckerCallback
 		
 		if (reason == Policy.RETRY) 
 		{
-			// displayResult( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry_needed) );
+			displayResult( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry_needed) );
 		}
 		else 
 		{
-			// displayResult( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_license_fail) );
+			displayResult( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_license_fail) );
 		}
 	}
    
@@ -124,29 +124,29 @@ public class GooglePlayLicensingAsExt implements LicenseCheckerCallback
 				{
 					AlertDialog.Builder builder = new AlertDialog.Builder(RunnerActivity.CurrentActivity);
 					if (!RunnerJNILib.isNetworkConnected()) {
-						// builder.setMessage( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_check_network ))
-							// .setCancelable(false)
-							// .setNegativeButton( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry), new DialogInterface.OnClickListener() {
-								// public void onClick( DialogInterface dialog, int id ) {
-		        					// mChecker.checkAccess(me);
-		        					// dialog.dismiss();
-								// }});
+						builder.setMessage( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_check_network ))
+							.setCancelable(false)
+							.setNegativeButton( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry), new DialogInterface.OnClickListener() {
+								public void onClick( DialogInterface dialog, int id ) {
+		        					mChecker.checkAccess(me);
+		        					dialog.dismiss();
+								}});
 					}
 					else { 
-						// builder.setMessage( result )
-							// .setCancelable(false)
-							// .setNegativeButton(  RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry), new DialogInterface.OnClickListener() {
-								// public void onClick( DialogInterface dialog, int id ) {
-		        					// mChecker.checkAccess(me);
-		        					// dialog.dismiss();
-								// }})
-							// .setPositiveButton( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_buy), new DialogInterface.OnClickListener() {
-								// public void onClick( DialogInterface dialog, int id ) {
-									 // Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse( "market://details?id="+RunnerActivity.CurrentActivity.getPackageName() ));
-									 // RunnerActivity.CurrentActivity.startActivity(myIntent);
-									 // RunnerJNILib.ExitApplication();//This create a crash :)
-								// }
- 							// });
+						builder.setMessage( result )
+							.setCancelable(false)
+							.setNegativeButton(  RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_retry), new DialogInterface.OnClickListener() {
+								public void onClick( DialogInterface dialog, int id ) {
+		        					mChecker.checkAccess(me);
+		        					dialog.dismiss();
+								}})
+							.setPositiveButton( RunnerActivity.CurrentActivity.getString(R.string.yyg_gpl_ext_buy), new DialogInterface.OnClickListener() {
+								public void onClick( DialogInterface dialog, int id ) {
+									 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse( "market://details?id="+RunnerActivity.CurrentActivity.getPackageName() ));
+									 RunnerActivity.CurrentActivity.startActivity(myIntent);
+									 RunnerJNILib.ExitApplication();//This create a crash :)
+								}
+ 							});
  					}
 	 				
 					AlertDialog alert  = builder.create();
