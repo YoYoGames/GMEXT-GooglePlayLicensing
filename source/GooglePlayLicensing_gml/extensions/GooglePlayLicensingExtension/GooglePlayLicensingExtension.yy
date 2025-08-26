@@ -20,7 +20,7 @@
   "files":[
     {"$GMExtensionFile":"","%Name":"","constants":[
         {"$GMExtensionConstant":"","%Name":"GooglePlayLicensingExtension_RETRY","hidden":false,"name":"GooglePlayLicensingExtension_RETRY","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"291",},
-      ],"copyToTargets":8,"filename":"GooglePlayLicensingAsExt.ext","final":"","functions":[
+      ],"copyToTargets":8,"filename":"GooglePlayLicensingExtension.ext","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"GooglePlayLicensing_CheckLicensing","argCount":0,"args":[],"documentation":"","externalName":"GooglePlayLicensing_CheckLicensing","help":"GooglePlayLicensing_CheckLicensing()","hidden":false,"kind":4,"name":"GooglePlayLicensing_CheckLicensing","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
       ],"init":"","kind":4,"name":"","order":[],"origname":"extensions\\GooglePlayLicensingAsExt.ext","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
@@ -45,8 +45,19 @@
   "macsourcedir":"",
   "name":"GooglePlayLicensingExtension",
   "options":[
+    {"$GMExtensionOption":"","%Name":"__extOptLabel","defaultValue":"BUILD OPTIONS:","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"b7345367-09c9-4d63-8ffa-74b9029b317a","hidden":false,"listItems":[],"name":"__extOptLabel","optType":5,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"sdkPath","defaultValue":"../GooglePlayLicensing_sdk","description":"The name of the library folder inside the Sdk folder.","displayName":"SDK Folder Name","exportToINI":false,"extensionId":null,"guid":"8066f778-a967-4190-b790-2f1338ce7783","hidden":false,"listItems":[],"name":"sdkPath","optType":4,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
     {"$GMExtensionOption":"","%Name":"ManualCallback","defaultValue":"False","description":"","displayName":"Manual Callback","exportToINI":false,"extensionId":null,"guid":"31b3a236-3684-48a1-84a2-d8277396514c","hidden":false,"listItems":[],"name":"ManualCallback","optType":0,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
-    {"$GMExtensionOption":"","%Name":"sdkFolderName","defaultValue":"library","description":"The name of the library folder inside the Sdk folder.","displayName":"SDK Folder Name","exportToINI":false,"extensionId":null,"guid":"8066f778-a967-4190-b790-2f1338ce7783","hidden":false,"listItems":[],"name":"sdkFolderName","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"__extOptLabel1","defaultValue":"EXTRA OPTIONS:","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"f72146ce-239b-4195-af44-ba0953b41e58","hidden":false,"listItems":[],"name":"__extOptLabel1","optType":5,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"logLevel","defaultValue":"1","description":"","displayName":"Log Level","exportToINI":false,"extensionId":null,"guid":"f62435ac-5891-4495-9606-7077c96bb1ce","hidden":false,"listItems":[
+        "0",
+        "1",
+        "2",
+      ],"name":"logLevel","optType":6,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionStable","defaultValue":"2022.8.0.0","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"1a1de7d7-f4c5-4fcd-94b7-882392552d5f","hidden":true,"listItems":[],"name":"versionStable","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionBeta","defaultValue":"2022.800.0.0","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"a25cc10c-a6ed-4ad1-8e18-cbbd8ce4a633","hidden":true,"listItems":[],"name":"versionBeta","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionDev","defaultValue":"9.9.1.1","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"2365aa26-b413-4deb-a380-e0c0ec0ab22c","hidden":true,"listItems":[],"name":"versionDev","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionLTS","defaultValue":"2022.0.0.0","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"3b759c98-2605-4f33-ab2d-5e70dae6c73c","hidden":true,"listItems":[],"name":"versionLTS","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
   ],
   "optionsFile":"options.json",
   "packageId":"com.yoyogames.googleplaylicensingextension",
