@@ -144,7 +144,7 @@ public class GooglePlayLicensingAsExt implements LicenseCheckerCallback
 								public void onClick( DialogInterface dialog, int id ) {
 									 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse( "market://details?id="+RunnerActivity.CurrentActivity.getPackageName() ));
 									 RunnerActivity.CurrentActivity.startActivity(myIntent);
-									 RunnerJNILib.ExitApplication();//This create a crash :)
+									 // RunnerJNILib.ExitApplication();//This create a crash :)
 								}
  							});
  					}
