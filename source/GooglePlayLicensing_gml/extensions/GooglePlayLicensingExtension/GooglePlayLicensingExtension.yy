@@ -16,7 +16,7 @@
   "copyToTargets":8,
   "description":"",
   "exportToGame":true,
-  "extensionVersion":"2.6.0",
+  "extensionVersion":"3.0.0",
   "files":[
     {"$GMExtensionFile":"","%Name":"","constants":[
         {"$GMExtensionConstant":"","%Name":"GooglePlayLicensingExtension_RETRY","hidden":false,"name":"GooglePlayLicensingExtension_RETRY","resourceType":"GMExtensionConstant","resourceVersion":"2.0","value":"291",},

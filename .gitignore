@@ -5,3 +5,5 @@ source/GooglePlayLicensing_gml/options/
 source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/AndroidSource/Sdk/**
 
 source/GooglePlayLicensing_sdk/
+
+output/

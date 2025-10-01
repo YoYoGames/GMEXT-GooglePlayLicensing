@@ -1,18 +1,1 @@
-{
-    "gitHubUrl": "https://github.com/YoYoGames/GMEXT-GooglePlayLicensing",
-    "projectFile": "source/GooglePlayLicensing_gml/GooglePlayLicensing.yyp",
-    "projectVersion": "LTS22",
-    "releaseTemplate": "templates/release_body.md",
-    "extensionMetaData": [
-        {
-            "extensionFile": "source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/GooglePlayLicensingExtension.yy",
-            "packageId": "com.yoyogames.googleplaylicensingextension",
-            "packageName": "Google Play Licensing",
-            "packageVersion": "2.6.0",
-            "packageFormat": "LTS22",
-            "includeFolders": null,
-            "includeResources": null,
-            "excludeResources": null
-        }
-    ]
-}
+{"gitHubUrl":"https://github.com/YoYoGames/GMEXT-GooglePlayLicensing","projectFile":"source/GooglePlayLicensing_gml/GooglePlayLicensing.yyp","projectVersion":"LTS22","releaseTemplate":"templates/release_body.md","extensionMetaData":[{"extensionFile":"source/GooglePlayLicensing_gml/extensions/GooglePlayLicensingExtension/GooglePlayLicensingExtension.yy","packageId":"com.yoyogames.googleplaylicensingextension","packageName":"Google Play Licensing","packageVersion":"3.0.0","packageFormat":"LTS22","includeFolders":null,"includeResources":null,"excludeFolders":null,"excludeResources":null,"postRemovals":[]}],"documentationFolder":null}
