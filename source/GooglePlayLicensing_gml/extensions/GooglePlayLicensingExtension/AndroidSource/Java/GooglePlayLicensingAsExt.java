@@ -64,7 +64,7 @@ public class GooglePlayLicensingAsExt implements LicenseCheckerCallback
 		
 		Log.i("yoyo", "!!!!##### Successful license check #####!!!!!! ");
 		
-		if(RunnerJNILib.extOptGetReal("GooglePlayLicensingExtension", "ManualCallback") >= 0.5)
+		if(RunnerJNILib.extOptGetReal("GooglePlayLicensingExtension", "manualCallback") >= 0.5)
 		{
 			int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
 			RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GooglePlayLicensingExtension");
@@ -79,7 +79,7 @@ public class GooglePlayLicensingAsExt implements LicenseCheckerCallback
 		if (RunnerActivity.CurrentActivity.isFinishing())
 			return;
 		
-		if(RunnerJNILib.extOptGetReal("GooglePlayLicensingExtension", "ManualCallback") >= 0.5)
+		if(RunnerJNILib.extOptGetReal("GooglePlayLicensingExtension", "manualCallback") >= 0.5)
 		{
 			int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
 			RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GooglePlayLicensingExtension");

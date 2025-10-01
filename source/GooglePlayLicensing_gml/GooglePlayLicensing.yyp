@@ -22,8 +22,7 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"Google Play Licensing Extension.docx","CopyToMask":-1,"filePath":"datafiles","name":"Google Play Licensing Extension.docx","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Google Play Licensing Extension.pdf","CopyToMask":-1,"filePath":"datafiles","name":"Google Play Licensing Extension.pdf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"GMEXT-GooglePlayLicensing.html","CopyToMask":0,"filePath":"datafiles","name":"GMEXT-GooglePlayLicensing.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

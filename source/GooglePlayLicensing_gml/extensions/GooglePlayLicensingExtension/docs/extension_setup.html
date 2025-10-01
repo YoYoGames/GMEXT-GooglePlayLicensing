@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Setup - GMEXT-GooglePlayLicensing</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="assets/css/gmext_style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Setup";
+        var mkdocs_page_input_path = "extension_setup.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/gml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> GMEXT-GooglePlayLicensing
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="home.html">Google Play Licensing</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Setup</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="extension_options.html">Extension Options</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">GMEXT-GooglePlayLicensing</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Setup</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/YoYoGames/GMEXT-GooglePlayLicensing/edit/master/docs/extension_setup.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>This extension provides no in-game functions and only requires some initial setup. To correctly set up your game please follow these steps:</p>
+<ol>
+<li>Check the <a href="extension_options.html">Extension Options Guide</a> to check how the extension needs to be setup.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The SDK folder should exist outside of the project folder.</p>
+</div>
+<ol>
+<li>Once you have the extension installed, you then need to set up licensing (see <a href="https://developer.android.com/google/play/licensing/setting-up#account">Setting Up a Publisher Account</a>). For that, go to your Google Play dashboard and set up an <strong>App Listing</strong> for the game (from your Google Play console click the <strong>Create Application</strong> button and follow the on-screen prompts). You then need to get the Public Key from the <strong>Monetise</strong> → <strong>Monetisation Setup</strong> section of the Developer Console and copy the Licensing Public Key from the box at the bottom.</li>
+</ol>
+<p><img alt="Google Play Console Monetisation setup" src="assets/play_console_monetisation_setup.png" /></p>
+<ol>
+<li>
+<p>You need to copy that to the clipboard then go back to GameMaker and add it into the <strong>Google Licensing Public Key</strong> field of the <a href="https://manual.yoyogames.com/Settings/Game_Options/Android.htm#packaging"><strong>Packaging</strong></a> section under <a href="https://manual.yoyogames.com/Settings/Game_Options/Android.htm">Android Game Options</a>.</p>
+</li>
+<li>
+<p>Now, with Google Licensing enabled, testing your game will show a message saying that the game could not be licensed, with the option to either <strong>Retry</strong> the connection or to go to the store to <strong>Buy</strong> the game.</p>
+</li>
+</ol>
+<p><img alt="Unable to get Valid License message" src="assets/unable_to_get_valid_license.png" /></p>
+<p>It looks like the licensing works, but you can't test the game anymore... to fix this so you can continue developing (and in the process see that the licensing works) you need to create an <strong>Alpha</strong> build of the project and upload it to the store.</p>
+<ol>
+<li>Before you can test that the licensing works and keep playing your game on your devices, you will need to upload an APK of the project as an <strong>Alpha</strong> or an <strong>Internal Test</strong> build. To do this, you should first fill in the minimum required details for your app listing on the console, shown in the following image:</li>
+</ol>
+<p><img alt="Minimum Required Details" src="assets/minimum_required_details.png" /></p>
+<p>Some of these sections require you to upload an APK first, so go to the section <strong>App Releases</strong> and click the <strong>Manage Alpha</strong> (or the Manage Internal Test) text. On the next page you want to create a <strong>New Alpha/Test Release</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At this point you will be asked if you want to use Google Play App Signing for your game. You should select <strong>CONTINUE/FINISH</strong> for this, as it is required for the extension to work.</p>
+</div>
+<p><img alt="Google Play App Signing" src="assets/google_play_app_signing.png" /></p>
+<ol>
+<li>Once you opt into the App Signing program, you can then upload an APK as an Alpha/Test build (if you don't know how to make an APK then please see the article <a href="https://help.yoyogames.com/hc/en-us/articles/115001624867-Compiling-Your-Android-App">Android: Compiling Your App</a>). Once it's uploaded you should then continue to fill out the rest of the relevant app listing details (like content rating or pricing), and then when all is correct (you will see green ticks beside the relevant items) you can return to the Alpha/Test section, review the details and publish.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you opt in to the Google Licensing, you will need to sign each app with a <strong>UNIQUE KEYSTORE</strong>. This is a security measure implemented by Google as part of the licensing system. Don't forget that you need to keep this <strong>.keystore</strong> file along with its information stored in your hard drive in order to be able to update your application.</p>
+</div>
+<p><img alt="Keystore" src="assets/keystore.jpg" /></p>
+<p>Note that once you publish the Alpha/Test build, it can take a few hours for it to be accepted and another few hours for it to become "live" and available for testing.</p>
+<ol>
+<li>Once the app is live as an Alpha on the Play Store, you should delete any test APK's created by GameMaker that are on your device, and then download the version from the Google Play Store. This should be run once to ensure that licensing is working as required. You should be able to run the game now from GameMaker on your Android device and the previous message about retrying or buying will not be shown, indicating that the project has been licensed correctly.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you still get the licensing warning message, make sure that the email used to register the device is part of the defined <strong>Testers</strong> (as a developer your email should be automatically added, see <a href="https://developer.android.com/google/play/licensing/setting-up#test-env">Setting Up the Testing Environment</a>).</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="home.html" class="btn btn-neutral float-left" title="Google Play Licensing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="extension_options.html" class="btn btn-neutral float-right" title="Extension Options">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p><p align="center">GameMaker 2025</p></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/YoYoGames/GMEXT-GooglePlayLicensing" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="home.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="extension_options.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/gml.min.js"></script>
+      <script src="assets/js/gmext_script.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

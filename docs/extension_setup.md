@@ -2,11 +2,9 @@
 
 This extension provides no in-game functions and only requires some initial setup. To correctly set up your game please follow these steps:
 
-1. First you need to install the Google Play Licensing SDK, which can be found at the [Play Licensing Repository](https://github.com/google/play-licensing). The contents under `lvl_library/src/main` then need to be copied to the `library` folder inside the extension's `AndroidSource/Sdk/` folder.
+1. Check the [Extension Options Guide](extension_options) to check how the extension needs to be setup.
 
-![Google Play Console Monetisation setup](assets/sdk_files.png)
-
-[[NOTE: The default folder name `library` can be changed in the **SDK Folder Name** extension option.]]
+[[WARNING: The SDK folder should exist outside of the project folder.]]
 
 2. Once you have the extension installed, you then need to set up licensing (see [Setting Up a Publisher Account](https://developer.android.com/google/play/licensing/setting-up#account)). For that, go to your Google Play dashboard and set up an **App Listing** for the game (from your Google Play console click the **Create Application** button and follow the on-screen prompts). You then need to get the Public Key from the **Monetise** → **Monetisation Setup** section of the Developer Console and copy the Licensing Public Key from the box at the bottom.
 
